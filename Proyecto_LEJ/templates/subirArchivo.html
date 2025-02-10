@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Subir Archivos
+{% endblock %}
+
+{% block div %}
+    
+    <div class="welcome-message">Subir Archivos</div>
+    <div class="file-list">
+        <div id="drop-area">
+            <p>Arrastra y suelta tus archivos aquí o</p>
+            <button onclick="document.getElementById('file-input').click()">Seleccionar archivos</button>
+            <form id="file-form" action="/subirArchivo" method="POST" enctype="multipart/form-data">
+                <input type="file" id="file-input" name="file" onchange="validateFileAndSubmit()">
+            </form>
+        </div>
+        <p class="rojo">{{error}}</p>
+    </div>
+</div>
+
+<script src="/static/JS/subirArchivos.js"></script>
+{% endblock %}
