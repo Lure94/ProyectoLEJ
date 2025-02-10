@@ -19,4 +19,4 @@ Luego hay que ejecutar el script de la base de datos sql server y al final ejecu
 - Todos los archivos están siendo guardados en la base de datos por lo que es ineficiente
 - Los archivos comprimidos se guardan como archivos genéricos por lo que se pierde su contenido
 - No estoy seguro si el correo que envia la verificacion de cuentas sigue activo
-- Casi todo el código a excepción de unas pocas funciones está en el archivo ==app.py== por lo que es dificil de leer (código spaguetti).
+- Casi todo el código a excepción de unas pocas funciones está en el archivo **app.py** por lo que es dificil de leer (código spaguetti).
